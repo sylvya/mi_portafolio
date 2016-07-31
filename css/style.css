@@ -1,12 +1,34 @@
 
-
-
-
+body{
+	background: #fff;
+}
+/*Header*/
+.navbar{
+	margin-bottom:0; 
+}
 .enlace-menu{
 	color: white;
 	font-size: 18px;
 }
 
+.item-color a:hover{
+	background: #0ABBB5!important;
 
+}
 
+/*Jumbotron*/
 
+.jumbotron-color{
+	background:#00A3B2;
+	color: #fff;
+}
+.contenedor-descripcion{
+	border: 1px solid red;
+	width: 40%;
+}
+	.font-size{
+		font-size: 30pt!important;
+	}
+.main{
+	border: 1px solid blue;
+}

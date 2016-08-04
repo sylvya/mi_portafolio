@@ -6,8 +6,10 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="icomoon/estilo.css">
 </head>
 <body>
+	
 	<header>
 		<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
 			<div class="container">
@@ -31,62 +33,139 @@
 				        <li class="item-color">				   
 				        	<a href="acercaDeMi.html" class="enlace-menu">
 				        		<span class="glyphicon glyphicon-user"></span>
-				        		Acerca de Mi
+				        		Acerca
 				        	</a>
 				        </li>
 				        <li class="item-color">				   
-				        	<a href="trabajo.html" class="enlace-menu">
+				        	<a href="portafolio.html" class="enlace-menu">
 				        		<span class="glyphicon glyphicon-folder-open"></span>
-				        		Trabajo
+				        		Portafolio
 				        	</a>
 				        </li>
 				        <li class="item-color">				   
 				        	<a href="contacto.html" class="enlace-menu">
-				        		<span class="glyphicon glyphicon-envelope"></span>
+				        		<span class="glyphicon glyphicon-folder-open"></span>
 				        		Contacto
 				        	</a>
 				        </li>
-				      </ul>
+				    </ul>
 				</div>
 			</div>
 		</nav>
 	</header>
 	<!--Inicia Jumbotron-->
-	<div class="jumbotron jumbotron-color">
+	
+	<div class="jumbotron jumbotron-portafolio">
 		<div class="container ">
-			<h1 class="font-size">Portafolio Profesional</h1>
-			<p>Silvia López Hernandez</p>
+			<div class="row">
+				<nav class="list-inline text-right lista-redes">
+					
+					<a href="#" class="icon-redes">
+						<img src="icomoon/icomoon_10_icons/PNG/linkedin2.png" alt="redes" class="img-redes">
+					</a>
+					<a href="#" class="icon-redes">
+						<img src="icomoon/icomoon_10_icons/PNG/twitter.png" alt="redes" class="img-redes ">
+					</a>
+					<a href="#" class="icon-redes">
+						<img src="icomoon/icomoon_10_icons/PNG/facebook.png" alt="redes" class="img-redes">
+					</a>
+					<a href="#" class="icon-redes">
+						<img src="icomoon/icomoon_10_icons/PNG/google-plus.png" alt="redes" class="img-redes">
+					</a>
+
+				</nav>
+				<h1 class="titulo-portafolio">Contacto</h1><br><br>
+				<p class="descripcion-portafolio ">Si necesitas más información, quieres hacerme una sugerencia, tienes un proyecto u oportunidad me encantaría saber todo sobre él. <br>
+				
+				Sólo envíame un correo a través de este formulario.
+
+				¡Gracias!
+				</p><br><br>
+			</div>
 		</div>
 	</div>
 
-	<section class="main container">
-		<p>
-			No dude en escribirme una línea! Si está interesado en trabajar conmigo , por favor proporcionar tanta información como sea posible acerca de su proyecto . Me pondré en contacto con usted tan pronto como sea posible . ¡A la espera de saber de ti!
-		</p>
-	</section>
+	<section class="container cont-seccionContacto">
+		<div class="row  ">
+			<div class="col-md-8 contacto seccion-contacto">
+				<h2 class="text-info">Contacto</h2><br>
+				<form action="#">
+					<div class="form-group">
+						<label for="nombre-completo">Name*</label>
+						<input type="text" class="form-control" placeholder="first & Last Name">
+						<p class="text-danger"></p>
+					</div>
+					<div class="form-group">
+						<label for="email">Email*</label>
+						<input type="email" class="form-control" placeholder="example@domain.com">
+					</div>
+					<div class="form-group">
+						<label for="nombre-completo">Ubicacion</label>
+						<input type="text" class="form-control" placeholder="first & Last Name">
+						<p class="text-danger"></p>
+					</div>
+					<div class="form-group">
+						<label for="nombre-completo">Asunto*</label>
+						<input type="text" class="form-control" placeholder="first & Last Name">
+						<p class="text-danger"></p>
+					</div>
+					<div class="form-group">
+						<label for="message">Message*</label>
+						<textarea name="message" id="" rows="6" class="form-control"></textarea>
+					</div>
+					<div class="form-group">
+						<input type="submit" name="submit" value="Send" class="btn btn-info btn-lg btn-secContacto">
+					</div>
+				</form>
+			</div>
+			<aside class="col-md-4 hidden-xs hidden-sm datos-contacto">
+				<div class="col-md-12">
+					<h2 class="text-info">Red Social</h2><br>
+					<a href="https://twitter.com/sildesweb" class="twitter-follow-button" data-size="large" data-show-screen-name="false" data-show-count="false">Follow @sildesweb</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+				
+				</div>
+				<div class="col-md-12">
+					
+					<a class="twitter-timeline" data-height="600" data-dnt="true" href="https://twitter.com/sildesweb">Tweets by sildesweb</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+				</div>
+			</aside>
+		</div>
+	</section>	
+	
 	<footer>
 		<div class="container-fluid contenedor-footer">
 			<div class="row">
-				<div class="col-md-4 contenedor-copy">
+				<div class="col-md-4 redes-footer">
+					<nav class="lista-redesFooter list-inline">
 					
+						<a href="#" class="icon-redesFooter">
+							<img src="icomoon/icomoon_10_icons/PNG/linkedin2.png" alt="redes" class="img-redes img-responsive">
+						</a>
+						<a href="#" class="icon-redesFooter">
+							<img src="icomoon/icomoon_10_icons/PNG/twitter.png" alt="redes" class="img-redes img-responsive ">
+						</a>
+						<a href="#" class="icon-redesFooter">
+							<img src="icomoon/icomoon_10_icons/PNG/facebook.png" alt="redes" class="img-redes img-responsive">
+						</a>
+						<a href="#" class="icon-redesFooter">
+							<img src="icomoon/icomoon_10_icons/PNG/google-plus.png" alt="redes" class="img-redes img-responsive">
+						</a>
+
+					</nav>
 				</div>
 				<div class="col-md-4 contenedor-copy">
-					<h5 class="copy">Copyright 2016 Silvia López. All rights reserved.</h5>
+					<h5 class=""> 2016 © Silvia López. All rights reserved.</h5>
 				</div>
 				<div class="col-md-4">
-					<ul class="list-inline text-right">
+					<ul class="list-inline text-right lista-footer">
 						<li><a href="index.html">Home</a></li>
 						<li class="panel-danger"><a href="acercaDeMi.html">Sobre mi</a></li>
 						<li><a href="trabajo.html">Trabajo</a></li>
-						<li><a href="contacto.html">Contacto</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</footer>
-	
-
-
 
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>

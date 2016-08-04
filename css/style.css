@@ -18,15 +18,18 @@ body{
 }
 
 /*Jumbotron*/
-.jumbotron-color{
+.jumbotron{
+	margin-bottom: 0;
+}
+.datos-seccion{
 	background:#00A3B2;
-	height: 100%!important;
 	color: #fff;
 	text-align: center;
+	margin-bottom: 45px;
 }
 .logo{
 	border: 1px solid white;
-	width: 30%;
+	width: 15em;
 }
 .titulo-principal{
 		text-align: center;
@@ -36,12 +39,10 @@ body{
 		text-align: center;
 		font-size: 20pt!important;
 	}	
-
-.row{
-	margin: 25px auto;
-}
 	.col-md-3{
 		text-align: center;
+		margin-top: 15px;
+		margin-bottom: 15px;
 	}
 		.contenedor-img{
 			padding: 0;
@@ -57,30 +58,133 @@ body{
 	.contenedor-copy{
 		text-align: center;
 		vertical-align: top;
+		margin: 20pt auto;
 		font-size: 12px;
 		color: #ccc;
 	}
-		.copy{
-			margin-top: 3px;
-		}
-/*A cerca de */
-.text-acercade{
-	margin: 0 15%!important;
-}
-.img-perfil{
-	width: 15%;
-	border-radius: 50%;
-	margin-bottom: -8em;
-}
-.content-section{
-	border: 1px solid green!important;
-	margin-top: 6em;
-}
-	.acercademi{
-		border:1px solid blue;
-		font-size: 16pt;
+	.lista-footer{
+		margin-top: 20pt!important;
 	}
-	.contacto{
-		border:1px solid blue;
-		font-size: 16pt;
+/*A cerca de */
+.perfil{
+	margin: 4em auto;
+}
+	.img-perfil{
+		width: 140pt;
+		text-align: center;
+		border-radius: 50%;
+		margin-bottom: -10em;
+	}
+.acercademi{
+	font-size: 16pt;
+	padding-right: 3em;
+}
+.contacto{
+	font-size: 16pt;
+}
+
+/*Portafolio*/
+.jumbotron-portafolio{
+	background:#00A3B2;
+	color: #fff;
+	text-align: center;
+
+}
+.titulo-portafolio{
+		text-align: center;
+		font-size: 35pt!important;
+}
+	.descripcion-portafolio{
+		text-align: center;
+		font-size: 20pt!important;
+	}
+	.titulo-descTrabajo{
+		color: #21ADD0;
+		font-weight: bold;
+		font-family:  "HelveticaLTStd-Roman", Arial, sans-serif;
+		margin: 80pt 50pt 15pt 50pt;
+	}
+	.text-portafolio{
+		color: #4C4C4C;
+		font-size: 18px;
+		text-align: left;
+		font-family: "HelveticaLTStd-Roman", Arial, sans-serif;
+		margin: 10pt 50pt 40pt 50pt;
+	}
+	.btn-portafolio{
+		background: #05C2C4;
+		border: 0;
+		padding: 10px;
+		font-size: 18px;
+		margin: 0 50pt 80pt 50pt;
+	}
+
+.contenedor-tabajos div {
+	padding-left: 0!important;
+	padding-right: 0!important;
+}	
+	.figure{
+		width: 100%;
+	
+	}
+		.imagen-portafolio{
+			width: inherit;
+			
+		}
+		.img-tsidental{
+			border: 1px solid #DCDCDC;
+		}
+
+/*Contacto*/
+.lista-redes{
+	position: absolute;
+	right: 100px;
+}
+	.lista-redes a{
+		position: relative;
+		display: inline-block;
+		width: 50px;
+		text-align: center;
+		
+	}
+		.icon-redes{
+			background: white;
+			border-radius: 50%;
+		}
+		.icon-redes:hover{
+			background: #999999;
+		}
+
+		.img-redes{
+			color: white;
+			margin: 10px 0;
+		}
+/*Inicia redes del footer*/
+.redes-footer{
+	margin-top: 12pt!important;
+	text-align: center;
+}
+.icon-redesFooter{
+	background:  #999999;
+}
+	.lista-redesFooter a{
+		display: inline-block;
+		width: 50px;
+		margin: 5px!important;
+	}
+		.icon-redesFooter img{
+			text-align: center;
+			margin: 10px;
+		}
+		.icon-redesFooter:hover{
+			background:  #fff;
+		}
+.cont-seccionContacto{
+	margin-bottom: 2em;
+}
+.seccion-contacto{
+	padding-right: 4.5em;
+}
+	.btn-secContacto{
+		margin-top: 2em;
 	}

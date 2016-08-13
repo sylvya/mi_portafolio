@@ -135,6 +135,7 @@ body{
 			border: 1px solid #DCDCDC;
 		}
 
+
 /*Contacto*/
 .lista-redes{
 	position: absolute;
@@ -159,6 +160,35 @@ body{
 			color: white;
 			margin: 10px 0;
 		}
+/*AJAX GIF y mensajes de exito o fracaso*/
+.procesando{
+	position: relative;
+}
+.hideAjax{
+	display: none;
+}
+.ajaxgif{
+	position: absolute;
+	right: 60%;
+	top: 27px;
+}
+.msg{
+	color:  #589D05;
+	font-weight: bold;
+	font-size: 12px;
+	height: 30px;
+	line-height: 28px;
+	padding: 0 10px;
+	width: 50%;
+	top: 27px;
+	left: 200px;
+	position: absolute;
+	text-transform: uppercase;
+	min-width: 121px;
+}
+.msg_error{
+	background: red;
+}
 /*Inicia redes del footer*/
 .redes-footer{
 	margin-top: 12pt!important;

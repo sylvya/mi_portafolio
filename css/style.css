@@ -1,6 +1,6 @@
 
 body{
-	background: #fff;
+	background: #F8F8FF
 
 }
 /*Header*/
@@ -34,11 +34,14 @@ body{
 .titulo-principal{
 		text-align: center;
 		font-size: 35pt!important;
+		font-family: arial;
 }
 	.descripcion-principal{
 		text-align: center;
 		font-size: 20pt!important;
-	}	
+		font-family: arial;
+	}
+
 	.col-md-3{
 		text-align: center;
 		margin-top: 15px;
@@ -50,8 +53,11 @@ body{
 			.imagen{
 				display: inline-block;
 				width: 100%;
-			}
-
+			    border: 5px solid #eee;
+			    -webkit-box-shadow: 4px 4px 4px rgba(0,0,0,0.3);
+			    -moz-box-shadow: 4px 4px 4px rgba(0,0,0,0.3);
+			    box-shadow: 4px 4px 4px rgba(0,0,0,0.3);
+			   }
 .contenedor-footer{
 	background: #222222;
 }
@@ -67,13 +73,14 @@ body{
 	}
 /*A cerca de */
 .perfil{
+	width: 140pt;
 	margin: 4em auto;
 }
 	.img-perfil{
-		width: 140pt;
+		width: 100%;
 		text-align: center;
 		border-radius: 50%;
-		margin-bottom: -10em;
+		margin-bottom: -12em;
 	}
 .acercademi{
 	font-size: 16pt;
@@ -87,7 +94,7 @@ body{
 .jumbotron-portafolio{
 	background:#00A3B2;
 	color: #fff;
-	text-align: center;
+	text-align: middle;
 
 }
 .titulo-portafolio{
@@ -98,25 +105,32 @@ body{
 		text-align: center;
 		font-size: 20pt!important;
 	}
+	.cont-desPortafolio-trabajos{
+		width: 80%;
+		margin: 0 auto;
+		margin-top: 3%;
+	}
 	.titulo-descTrabajo{
 		color: #21ADD0;
 		font-weight: bold;
-		font-family:  "HelveticaLTStd-Roman", Arial, sans-serif;
-		margin: 80pt 50pt 15pt 50pt;
+		font-family: Arial, sans-serif;
+		margin:10%;
 	}
 	.text-portafolio{
 		color: #4C4C4C;
 		font-size: 18px;
+		font-family: Arial, sans-serif;
+		margin:0 10%;
 		text-align: left;
-		font-family: "HelveticaLTStd-Roman", Arial, sans-serif;
-		margin: 10pt 50pt 40pt 50pt;
+		
 	}
 	.btn-portafolio{
 		background: #05C2C4;
 		border: 0;
-		padding: 10px;
 		font-size: 18px;
-		margin: 0 50pt 80pt 50pt;
+		margin: 10%;
+		padding: 10px;
+		
 	}
 
 .contenedor-tabajos div {
@@ -134,19 +148,18 @@ body{
 		.img-tsidental{
 			border: 1px solid #DCDCDC;
 		}
-
+	.imagenTrabajo-posicion2{
+		display: none;
+	}
 
 /*Contacto*/
 .lista-redes{
-	position: absolute;
-	right: 100px;
+	margin-right: 19px;
 }
 	.lista-redes a{
-		position: relative;
 		display: inline-block;
-		width: 50px;
 		text-align: center;
-		
+		width: 50px;
 	}
 		.icon-redes{
 			background: white;
@@ -192,7 +205,11 @@ body{
 /*Inicia redes del footer*/
 .redes-footer{
 	margin-top: 12pt!important;
-	text-align: center;
+	text-align: left;
+}
+.redes-footer{
+	padding-left: 0;
+	padding-right: 0;
 }
 .icon-redesFooter{
 	background:  #999999;
@@ -200,7 +217,7 @@ body{
 	.lista-redesFooter a{
 		display: inline-block;
 		width: 50px;
-		margin: 5px!important;
+		margin: 3px!important;
 	}
 		.icon-redesFooter img{
 			text-align: center;
@@ -218,3 +235,82 @@ body{
 	.btn-secContacto{
 		margin-top: 2em;
 	}
+
+
+/*MEDIA QUERIES*/
+@media (max-width:1199px){
+	.titulo-descTrabajo,.btn-portafolio{
+		margin:6%;
+	}
+	.text-portafolio{
+		margin:0 6%;
+		
+	}
+}
+@media (max-width:  1049px){
+	.contenedor-img{
+		background: #F8F8FF;
+	}
+	.lista-redes{
+		display: none;
+	}
+	
+}
+@media (max-width:  989px){
+	.datos-seccion{
+		margin-bottom: 0;
+	}
+	.img-responsivo{
+		display: none;
+	}
+	.img-home img{
+		width: 100%;
+		margin: 0 auto;
+	}
+	/*Acerca de mi*/
+	.img-perfil{
+		width: 70%;
+		margin-top: 0;
+		margin-bottom: -10em;
+	}
+	.acercademi{
+		margin-top: 4em;
+		padding-right: 15px;
+	}
+	/*portafolio*/
+	.imagenTrabajo-posicion1{
+		display: none;
+	}
+	.imagenTrabajo-posicion2{
+		display: block;
+	}
+	/*Contacto*/
+	.seccion-contacto{
+		padding-right: 15px;
+	}
+	/*Lista Footer*/
+	.icon-redesFooter{
+		border-radius: 50%;
+	}
+}
+@media(max-width: 769px){
+	.cont-listaSeccion{
+		width: 100%;
+	}
+	.list-inline{
+		text-align: center;
+	}
+}
+@media(max-width: 499px){
+	.img-herramientas{
+		width: 100%;
+		margin: 0 auto;
+
+	}
+	/*Footer*/
+	.copy-footer{
+		font-size: 13px!important;
+	}
+
+
+}

@@ -1,10 +1,366 @@
+/*
+Theme Name: Portafolio profesional
+Theme URI: http://web-desings.com/miusicTheme
+Description: plantilla creada por mi en wordpress, utilizando los archivos mínimos para que funcione.
+Author: Silvia lopez
+Version: 1.1
+License: GNU General Public License
+License URI: Puede utilizarlo tanto en lo personal como comercialmente, es libre de editarlo a su gusto sin necesidad de referenciar al autor.
+License: GNU General Public License
+License URI: license.txt
+Tags: custom-menu, full-width-template, right-sidebar
+*/
 body{
+	background: #F8F8FF;
+}
+/*Header*/
+/*
+	.seccion-menu{
+	border: 1px solid blue;
+	width: cover;
+	background: black;
+}*/
+.container{
 	border: 1px solid red;
+	padding: 0!important;
+}
+.navbar-inverse{
+	margin: 0!important;
+}
+.menu{
+	/*border: 2px solid blue;*/
 	margin: 0;
+	width: 100%;
+	line-height: 40px;
+	text-align: right;
 	padding: 0;
 }
-.content-principal{
-	border: 1px solid green;
+.menu li{
+	/*border: 1px solid yellow;*/
+	display: inline-block;
+	margin: 0;
+	margin-left: 20px;
+}
+.menu a{
+	/*border: 1px solid white;*/
+	color: lightgray;
+	font-size: 17pt;
+	padding: 0 10px;
+	/*text-decoration: none!important;*/
+}
+.menu li:hover{
+	background: #0ABBB5!important;
+
+}
+
+/*Jumbotron*/
+.jumbotron{
+	margin-bottom: 0;
+	background: #00A3B2!important;
+	color: #fff!important;
+}
+.datos-seccion{
+	background: #00A3B2!important;
+	
+	text-align: center;
+	margin-bottom: 45px;
+}
+.titulo-principal{
+		text-align: center;
+		font-size: 35pt!important;
+		font-family: arial;
+}
+	.descripcion-principal{
+		text-align: center;
+		font-size: 20pt!important;
+		font-family: arial;
+	}
+
+	.col-md-3{
+		text-align: center;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+		.contenedor-img{
+			padding: 0;
+		}
+			.imagen{
+				display: inline-block;
+				width: 100%;
+			    border: 5px solid #eee;
+			    -webkit-box-shadow: 4px 4px 4px rgba(0,0,0,0.3);
+			    -moz-box-shadow: 4px 4px 4px rgba(0,0,0,0.3);
+			    box-shadow: 4px 4px 4px rgba(0,0,0,0.3);
+			   }
+.contenedor-footer{
+	background: #222222;
+}
+	.contenedor-copy{
+		text-align: center;
+		vertical-align: top;
+		margin: 20pt auto;
+		font-size: 12px;
+		color: #ccc;
+	}
+	.lista-footer{
+		margin-top: 20pt!important;
+	}
+	
+/*A cerca de */
+
+.perfil{
+	width: 140pt;
+	margin: 4em auto;
+}
+	.img-perfil{
+		width: 100%;
+		text-align: center;
+		border-radius: 50%;
+		margin-bottom: -12em;
+	}
+.acercademi{
+	font-size: 16pt;
+	padding-right: 3em;
+}
+.contacto{
+	font-size: 16pt;
+}
+
+/*Portafolio*/
+.jumbotron-portafolio{
+	background:#00A3B2;
+	color: #fff;
+	text-align: middle;
+
+}
+.titulo-portafolio{
+		text-align: center;
+		font-size: 35pt!important;
+}
+	.descripcion-portafolio{
+		text-align: center;
+		font-size: 20pt!important;
+	}
+	.cont-desPortafolio-trabajos{
+		width: 80%;
+		margin: 0 auto;
+		margin-top: 3%;
+	}
+	.titulo-descTrabajo{
+		color: #21ADD0;
+		font-weight: bold;
+		font-family: Arial, sans-serif;
+		margin:10%;
+	}
+	.text-portafolio{
+		color: #4C4C4C;
+		font-size: 18px;
+		font-family: Arial, sans-serif;
+		margin:0 10%;
+		text-align: left;
+		
+	}
+	.btn-portafolio{
+		background: #05C2C4;
+		border: 0;
+		font-size: 18px;
+		margin: 10%;
+		padding: 10px;
+		
+	}
+
+.contenedor-tabajos div {
+	padding-left: 0!important;
+	padding-right: 0!important;
+}	
+	.figure{
+		width: 100%;
+	
+	}
+		.imagen-portafolio{
+			width: inherit;
+			
+		}
+		.img-tsidental{
+			border: 1px solid #DCDCDC;
+		}
+	.imagenTrabajo-posicion2{
+		display: none;
+	}
+
+/*Contacto*/
+.list-inline{
+	margin-left: 0!important;
+}
+.lista-redes{
+	border: 1px solid red;	
 	width: 100%;
 	height: auto;
+}
+	.lista-redes a{
+		border-radius: 50%;
+		display: inline-block;
+		line-height: 50px;
+		text-align: center;
+		text-decoration: none!important;
+		width: 50px;
+		height: 50px;
+		font-size: 25px;
+		margin-left: 10px;
+	}
+		.icon-redes{
+			color: white;
+			transition: all 1s;
+		}
+		.icon-redes:hover{
+			color:#00A3B2;
+			background: white;
+			transform: scale(1.1, 1.1);
+		}
+
+/*AJAX GIF y mensajes de exito o fracaso*/
+.procesando{
+	position: relative;
+}
+.hideAjax{
+	display: none;
+}
+.ajaxgif{
+	position: absolute;
+	right: 60%;
+	top: 27px;
+}
+.msg{
+	color:  #589D05;
+	font-weight: bold;
+	font-size: 12px;
+	height: 30px;
+	line-height: 28px;
+	padding: 0 10px;
+	width: 50%;
+	top: 27px;
+	left: 200px;
+	position: absolute;
+	text-transform: uppercase;
+	min-width: 121px;
+}
+.msg_error{
+	background: red;
+}
+
+/*Inicia redes del footer*/
+.redes-footer{
+	margin-top: 12pt!important;
+	text-align: left;
+}
+.redes-footer{
+	padding-left: 0;
+	padding-right: 0;
+}
+	.lista-redesFooter a{
+		display: inline-block;
+		border-radius: 50%;
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+		transition: all 0.5s;
+		font-size: 23px;
+		text-decoration: none!important;
+		text-align: center;
+		margin: 3px!important;
+	}
+	.lista-redesFooter a:hover{
+		background:  #fff;
+		transform: scale(1.2,1.2);
+	}
+		.icon-redesFooter:hover{
+			background:  #fff;
+		}
+.cont-seccionContacto{
+	margin-bottom: 2em;
+}
+.seccion-contacto{
+	padding-right: 4.5em;
+}
+	.btn-secContacto{
+		margin-top: 2em;
+	}
+
+/*MEDIA QUERIES*/
+@media (max-width:1199px){
+	.titulo-descTrabajo,.btn-portafolio{
+		margin:6%;
+	}
+	.text-portafolio{
+		margin:0 6%;
+		
+	}
+}
+@media (max-width:  1049px){
+	.contenedor-img{
+		background: #F8F8FF;
+	}
+	.lista-redes{
+		display: none;
+	}
+	
+}
+@media (max-width:  989px){
+	.datos-seccion{
+		margin-bottom: 0;
+	}
+	.img-responsivo{
+		display: none;
+	}
+	.img-home img{
+		width: 100%;
+		margin: 0 auto;
+	}
+	*/
+	/*Acerca de mi*/
+	.img-perfil{
+		width: 70%;
+		margin-top: 0;
+		margin-bottom: -10em;
+	}
+	.acercademi{
+		margin-top: 4em;
+		padding-right: 15px;
+	}
+
+	/*portafolio*/
+	.imagenTrabajo-posicion1{
+		display: none;
+	}
+	.imagenTrabajo-posicion2{
+		display: block;
+	}
+
+	/*Contacto*/
+	.seccion-contacto{
+		padding-right: 15px;
+	}
+	
+	/*Lista Footer*/
+@media(max-width: 769px){
+	.cont-listaSeccion{
+		width: 100%;
+	}
+	.list-inline{
+		text-align: center;
+		margin-left: 0!important;
+	}
+}
+@media(max-width: 499px){
+	.img-herramientas{
+		width: 100%;
+		margin: 0 auto;
+
+	}
+	/*Footer */
+	.copy-footer{
+		font-size: 13px!important;
+	}
+
+
 }

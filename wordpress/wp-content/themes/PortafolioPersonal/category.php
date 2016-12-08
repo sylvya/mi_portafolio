@@ -19,66 +19,120 @@
 					<span class="icon-linkedin"></span>
 				</a>
 			</nav>
-			<h1 class="titulo-principal">Acerca de mí</h1><br><br>
+			<h1 class="titulo-principal">Sobre Mí</h1><br><br>
+
 			<p class="descripcion-principal ">Soy Silvia, Desarrollador Web FrontEnd "colaborando con la interfaz y experiencia del usuario, haciendo de la web un lugar mejor."</p>
-			
-			<figure class="perfil">
-				<img src="img/perfil.jpg" alt="perfil" class="img-perfil">
-			</figure>
+
+			<!--inicia the loop para mostrar custom post type habilidades-->
+			<?php global $wp_query;
+			//En este punto le decimos que muestre los post type de acme_product
+			$wp_query = new WP_Query("post_type=sobre_mi&post_status=publish");
+			while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
+
+			    <?php 
+
+					$image = get_field('sobre_mi_perfil');
+
+					if( !empty($image) ): ?>
+						<figure class="perfil">
+							<img class="img-perfil" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+						</figure>
+
+				<?php endif; ?>
+			<?php endwhile; ?>
 		</div>
 	</div>
 
-	<section class="container">
-		<div class="row ">
-			<div class="col-md-8 acercademi">
-				<h2 class="text-info">Acerca de Mi.</h2><br>
-				<p class="text-justify">
-					Hola, Mi nombre es Silvia López Hernández, desarrollador web Front-End.<br><br>
-					Originalmente inicie mi experiencia laboral en el área de Soporte Técnico y al mismo tiempo desempeñando tareas propias del área de sistemas. Tras decidir mi especialidad me he enfocado al Desarrollo Web independiente, proporcionando mis servicios como Freelance. <br><br>
-
-					Mediante los trabajos que he realizado desde entonces, he obtenido experiencia con cada uno de ellos y de igual manera continúo en  el camino del aprendizaje con nuevas herramientas. 
-					<br><br>
-
-					Me gradue de la Lic. En Ciencias de la Informática y posteriormente cursé la Maestría en Sistemas Computacionales. <br><br>
+	<section class="container content-sobremi">
+		<div class="col-md-8 acercademi">
+			<h2 class="text-info">Sobre mí</h2><br>
 			
-				</p>
-			</div>
-			<div class="col-md-4 contacto">
-				<h2 class="text-info">Contacto</h2><br>
-				<form method="POST" id="form-contacto" action="">
-					<div class="form-group">
-						<label for="nombre-completo">Nombre*</label>
-						<input type="text" name="name"  class="form-control" placeholder="First & Last Name" id="name">
-						<p class="text-danger"></p>
-					</div>
-					<div class="form-group">
-						<label for="email">Email*</label>
-						<input type="email" name="email" class="form-control" placeholder="example@domain.com" id="email">
-					</div>
-					<div class="form-group">
-						<label for="nombre-completo">Asunto*</label>
-						<input type="text" name="subject" class="form-control" placeholder="Subject" id="name" id="subject">
-						<p class="text-danger"></p>
-					</div>
-					<div class="form-group">
-						<label for="message">Mensaje*</label>
-						<textarea name="message" id="message" rows="6" class="form-control" id="name"></textarea>
-					</div>
-					<div class="procesando">
-						<img src="img/loader.gif" alt="loading" class="ajaxgif hideAjax">
-						<div class="msg"></div>
-					</div>
+				<?php global $wp_query;
+					//En este punto le decimos que muestre los post type de acme_product
+					$wp_query = new WP_Query("post_type=sobre_mi&post_status=publish");
+					while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
+					    <p>
+							<?php the_content(); ?>
+						</p>	
+				<?php endwhile; ?>
+		
+			
+		</div>
+		<div class="col-md-4 contacto">
+			<h2 class="text-info">Contacto</h2><br>
+			<form method="POST" id="form-contacto" action="">
+				<div class="form-group">
+					<label for="nombre-completo">Nombre*</label>
+					<input type="text" name="name"  class="form-control" placeholder="First & Last Name" id="name">
+					<p class="text-danger"></p>
+				</div>
+				<div class="form-group">
+					<label for="email">Email*</label>
+					<input type="email" name="email" class="form-control" placeholder="example@domain.com" id="email">
+				</div>
+				<div class="form-group">
+					<label for="nombre-completo">Asunto*</label>
+					<input type="text" name="subject" class="form-control" placeholder="Subject" id="name" id="subject">
+					<p class="text-danger"></p>
+				</div>
+				<div class="form-group">
+					<label for="message">Mensaje*</label>
+					<textarea name="message" id="message" rows="6" class="form-control" id="name"></textarea>
+				</div>
+				<div class="procesando">
+					<img src="img/loader.gif" alt="loading" class="ajaxgif hideAjax">
+					<div class="msg"></div>
+				</div>
 
-					<div class="form-group">
-						<input type="submit" name="submit" value="Send" class="btn btn-info btn-lg btn-secContacto" id="btn-contact">
-					</div>
-				</form>
-			</div>
+				<div class="form-group">
+					<input type="submit" name="submit" value="Send" class="btn btn-info btn-lg btn-secContacto" id="btn-contact">
+				</div>
+			</form>
 		</div>
 	</section>
 		<?php
 	}else if ($idcategoria == 4) {
-		echo "esta es la categoria 4";
+		?>
+			<div class="jumbotron jumbotron-portafolio">
+				<div class="container ">
+					<h1 class="titulo-portafolio">Portafolio</h1><br><br>
+					<p class="descripcion-portafolio ">Muestra de trabajos recientes</p><br><br>
+				</div>
+			</div>
+			<section class="container-fluid">
+				<div class="row contenedor-tabajos">	
+					<?php global $wp_query;
+						//En este punto le decimos que muestre los post type de acme_product
+						$wp_query = new WP_Query("post_type=portafolio&post_status=publish");
+						$i = 1;
+						while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
+							
+								<div class="col-md-6">
+									<div class="cont-desPortafolio-trabajos">
+									  	<h2 class="titulo-descTrabajo"><?php the_title(); ?></h2>
+									  	
+										<p><?php the_content(); ?></p>
+										<a href="http://mrpazzo.com.mx/?" class=" btn btn-primary btn-portafolio">VIEW WEBSITE</a>
+									</div>
+								</div>
+								<div class="col-md-6 content-imagenTrabajo">
+									<?php
+										$proyecto = get_field('portafolio');
+										if( !empty($proyecto) ): ?>
+											<figure class="figure">
+												<img class="img-responsive imagen-portafolio" alt="pazzo" src="<?php echo $proyecto['url']; ?>" alt="<?php echo $proyecto['alt']; ?>" />
+											</figure>
+
+									<?php endif; ?>
+								</div>
+								<?php 
+									$i++;
+								?>
+						<?php endwhile; 
+					?>
+				</div>
+			</section>
+			<?php
 	}else if ($idcategoria == 5) {
 		echo "Esta es la categoria 5";
 	}

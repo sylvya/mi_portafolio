@@ -24,6 +24,7 @@ body{
 	border: 1px solid red;
 	padding: 0!important;
 }
+
 .navbar-inverse{
 	margin: 0!important;
 }
@@ -107,31 +108,40 @@ body{
 	}
 	
 /*A cerca de */
-
+.content-sobremi{
+	margin-top: 50pt;
+}
 .perfil{
-	width: 140pt;
-	margin: 4em auto;
+	width: 100%;
+	margin-top: 50pt;
 }
 	.img-perfil{
-		width: 100%;
+		width: 150px;
 		text-align: center;
 		border-radius: 50%;
-		margin-bottom: -12em;
+		margin-bottom: -8em;
+
 	}
 .acercademi{
+	border:1px solid green;
 	font-size: 16pt;
-	padding-right: 3em;
 }
 .contacto{
 	font-size: 16pt;
 }
-
+.acercademi p{
+	text-align: justify;
+	padding-right: 3em;
+}
 /*Portafolio*/
 .jumbotron-portafolio{
 	background:#00A3B2;
 	color: #fff;
 	text-align: middle;
 
+}
+.col-md-6{
+	border: 1px solid orange;
 }
 .titulo-portafolio{
 		text-align: center;
@@ -142,9 +152,10 @@ body{
 		font-size: 20pt!important;
 	}
 	.cont-desPortafolio-trabajos{
+		border: 1px solid yellow;
 		width: 80%;
-		margin: 0 auto;
-		margin-top: 3%;
+		margin: 4% auto;
+		/*margin-top: 3%;*/
 	}
 	.titulo-descTrabajo{
 		color: #21ADD0;
@@ -152,8 +163,10 @@ body{
 		font-family: Arial, sans-serif;
 		margin:10%;
 	}
-	.text-portafolio{
-		color: #4C4C4C;
+
+	.cont-desPortafolio-trabajos p{
+		border:1px solid olive;
+		color: #4C4C4C!important;
 		font-size: 18px;
 		font-family: Arial, sans-serif;
 		margin:0 10%;
@@ -173,6 +186,9 @@ body{
 	padding-left: 0!important;
 	padding-right: 0!important;
 }	
+.content-imagenTrabajo{
+	border:1px solid green;
+}
 	.figure{
 		width: 100%;
 	
@@ -291,9 +307,9 @@ body{
 	.titulo-descTrabajo,.btn-portafolio{
 		margin:6%;
 	}
-	.text-portafolio{
-		margin:0 6%;
-		
+
+	.cont-desPortafolio-trabajos p{
+		margin: 0 6%;
 	}
 }
 @media (max-width:  1049px){
@@ -302,6 +318,9 @@ body{
 	}
 	.lista-redes{
 		display: none;
+	}
+	.titulo-descTrabajo{
+		font-size: 20px;
 	}
 	
 }
@@ -350,12 +369,18 @@ body{
 		text-align: center;
 		margin-left: 0!important;
 	}
+	.titulo-descTrabajo{
+		font-size: 16px;
+	}
+
 }
 @media(max-width: 499px){
 	.img-herramientas{
 		width: 100%;
 		margin: 0 auto;
-
+	}
+	.btn-portafolio{
+		width: 88%;
 	}
 	/*Footer */
 	.copy-footer{

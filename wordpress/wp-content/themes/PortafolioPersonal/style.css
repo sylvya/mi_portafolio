@@ -46,8 +46,11 @@ body{
 	/*border: 1px solid white;*/
 	color: lightgray;
 	font-size: 17pt;
-	padding: 0 10px;
-	/*text-decoration: none!important;*/
+	padding: 15px 10px;
+	text-decoration: none!important;
+}
+.menu a:hover{
+	color: #fff;
 }
 .menu li:hover{
 	background: #0ABBB5!important;
@@ -138,10 +141,20 @@ body{
 	background:#00A3B2;
 	color: #fff;
 	text-align: middle;
+	margin-bottom: 0 !important;
+}
+
+.contenedor-trabajos{
+	position: relative;
+}
+.par{
+	position: absolute!important;
+	display: block;
+	right: 0!important;
 
 }
-.col-md-6{
-	border: 1px solid orange;
+.impar{
+	/*background: lightgray;*/
 }
 .titulo-portafolio{
 		text-align: center;
@@ -152,7 +165,6 @@ body{
 		font-size: 20pt!important;
 	}
 	.cont-desPortafolio-trabajos{
-		border: 1px solid yellow;
 		width: 80%;
 		margin: 4% auto;
 		/*margin-top: 3%;*/
@@ -165,7 +177,6 @@ body{
 	}
 
 	.cont-desPortafolio-trabajos p{
-		border:1px solid olive;
 		color: #4C4C4C!important;
 		font-size: 18px;
 		font-family: Arial, sans-serif;
@@ -174,20 +185,23 @@ body{
 		
 	}
 	.btn-portafolio{
-		background: #05C2C4;
-		border: 0;
-		font-size: 18px;
-		margin: 10%;
-		padding: 10px;
+		background: #05C2C4!important;
+		border: 0!important;
+		font-size: 18px!important;
+		margin: 25pt 0;
+		padding: 10px!important;
 		
 	}
+	.btn-portafolio:hover{
+		background: #286090!important;
+	}
 
-.contenedor-tabajos div {
+.contenedor-trabajos div {
 	padding-left: 0!important;
 	padding-right: 0!important;
 }	
 .content-imagenTrabajo{
-	border:1px solid green;
+	border:1px solid #EEEEEE;
 }
 	.figure{
 		width: 100%;
@@ -195,9 +209,8 @@ body{
 	}
 		.imagen-portafolio{
 			width: inherit;
-			
-		}
-		.img-tsidental{
+			margin-top: -1px;
+			margin-bottom: -1px;
 			border: 1px solid #DCDCDC;
 		}
 	.imagenTrabajo-posicion2{
@@ -348,6 +361,11 @@ body{
 	}
 
 	/*portafolio*/
+	.par{	
+	position: relative!important;
+	display: block;
+
+}
 	.imagenTrabajo-posicion1{
 		display: none;
 	}

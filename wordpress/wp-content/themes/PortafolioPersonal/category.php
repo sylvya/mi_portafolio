@@ -95,51 +95,161 @@
 		?>
 			<div class="jumbotron jumbotron-portafolio">
 				<div class="container ">
+					<nav class="list-inline text-right lista-redes">
+						<a href="https://www.facebook.com/SilviaLoph" class="icon-redes">
+							<span class="icon-facebook"></span>
+						</a>
+						
+						<a href="https://twitter.com/sildesweb" class="icon-redes">
+							<span class="icon-twitter"></span>
+						</a>
+						<a href=" https://www.linkedin.com/in/silvia-lopez-hernandez-622545112?trk=nav_responsive_tab_profile_pic" class="icon-redes">
+							<span class="icon-linkedin"></span>
+						</a>
+					</nav>
 					<h1 class="titulo-portafolio">Portafolio</h1><br><br>
 					<p class="descripcion-portafolio ">Muestra de trabajos recientes</p><br><br>
 				</div>
 			</div>
 			<section class="container-fluid">
-				<div class="row contenedor-tabajos">	
+					
 					<?php global $wp_query;
 						//En este punto le decimos que muestre los post type de acme_product
 						$wp_query = new WP_Query("post_type=portafolio&post_status=publish");
 						$i = 1;
 						while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 							
-								<div class="col-md-6">
-									<div class="cont-desPortafolio-trabajos">
-									  	<h2 class="titulo-descTrabajo"><?php the_title(); ?></h2>
-									  	
-										<p><?php the_content(); ?></p>
-										<a href="http://mrpazzo.com.mx/?" class=" btn btn-primary btn-portafolio">VIEW WEBSITE</a>
+								<?php
+							  		/*echo $i;*/
+							  		if ($i%2==0){
+									   
+								?>	<div class="row contenedor-trabajos">
+										<div class="col-md-6 par">
+											<div class="cont-desPortafolio-trabajos">
+											  	<h2 class="titulo-descTrabajo"><?php the_title(); ?></h2>
+												<p><?php the_content();  /*echo "el $i es par,";*/?></p>
+											</div>
+										</div>
+										<div class="col-md-6 content-imagenTrabajo">
+											<?php
+												$proyecto = get_field('portafolio');
+												if( !empty($proyecto) ): ?>
+													<figure class="figure">
+														<img class="img-responsive imagen-portafolio" alt="pazzo" src="<?php echo $proyecto['url']; ?>" alt="<?php echo $proyecto['alt']; ?>" />
+													</figure>
+											<?php endif; ?>
+										</div>
 									</div>
-								</div>
-								<div class="col-md-6 content-imagenTrabajo">
-									<?php
-										$proyecto = get_field('portafolio');
-										if( !empty($proyecto) ): ?>
-											<figure class="figure">
-												<img class="img-responsive imagen-portafolio" alt="pazzo" src="<?php echo $proyecto['url']; ?>" alt="<?php echo $proyecto['alt']; ?>" />
-											</figure>
-
-									<?php endif; ?>
-								</div>
+								<?php
+									}else{ 
+									    ?>
+										    <div class="row contenedor-trabajos">
+											    <div class="col-md-6 impar">
+													<div class="cont-desPortafolio-trabajos">
+													  	<h2 class="titulo-descTrabajo"><?php the_title(); ?></h2>
+														<p><?php the_content(); /*echo "el $i es impar,";*/?></p>
+													</div>
+												</div>
+												<div class="col-md-6 content-imagenTrabajo">
+													<?php
+														$proyecto = get_field('portafolio');
+														if( !empty($proyecto) ): ?>
+															<figure class="figure">
+																<img class="img-responsive imagen-portafolio" alt="pazzo" src="<?php echo $proyecto['url']; ?>" alt="<?php echo $proyecto['alt']; ?>" />
+															</figure>
+													<?php endif; ?>
+												</div>
+											</div>
+									    <?php
+									}
+							  	?>
 								<?php 
 									$i++;
 								?>
 						<?php endwhile; 
 					?>
-				</div>
 			</section>
 			<?php
 	}else if ($idcategoria == 5) {
-		echo "Esta es la categoria 5";
-	}
+		/*echo "Esta es la categoria 5";*/
+		?>
+			<!--Inicia Jumbotron-->
+	
+	<div class="jumbotron jumbotron-portafolio">
+		<div class="container ">
+			
+			<nav class="list-inline text-right lista-redes">
+				<a href="https://www.facebook.com/SilviaLoph" class="icon-redes">
+					<span class="icon-facebook"></span>
+				</a>
+				
+				<a href="https://twitter.com/sildesweb" class="icon-redes">
+					<span class="icon-twitter"></span>
+				</a>
+				<a href=" https://www.linkedin.com/in/silvia-lopez-hernandez-622545112?trk=nav_responsive_tab_profile_pic" class="icon-redes">
+					<span class="icon-linkedin"></span>
+				</a>
+			</nav>
+			<h1 class="titulo-portafolio">Contacto</h1><br><br>
+			<p class="descripcion-portafolio ">Si necesitas más información, quieres hacerme una sugerencia, tienes un proyecto u oportunidad me encantaría saber todo sobre él. <br>
+			
+			Sólo envíame un correo a través de este formulario.
 
+			¡Gracias!
+			</p><br><br>
+			
+		</div>
+	</div>
+	<section class="container cont-seccionContacto">
+		<div class="row  ">
+			<div class="col-md-8 contacto seccion-contacto">
+				<h2 class="text-info">Contacto</h2><br>
+				<form method="POST" id="form-contacto" action="">
+					<div class="form-group">
+						<label for="nombre-completo">Nombre*</label>
+						<input type="text" name="name"  class="form-control" placeholder="First & Last Name" id="name">
+						<p class="text-danger"></p>
+					</div>
+					<div class="form-group">
+						<label for="email">Email*</label>
+						<input type="email" name="email" class="form-control" placeholder="example@domain.com" id="email">
+					</div>
+					<div class="form-group">
+						<label for="nombre-completo">Asunto*</label>
+						<input type="text" name="subject" class="form-control" placeholder="Subject" id="name" id="subject">
+						<p class="text-danger"></p>
+					</div>
+					<div class="form-group">
+						<label for="message">Mensaje*</label>
+						<textarea name="message" id="message" rows="6" class="form-control" id="name"></textarea>
+					</div>
+					<div class="procesando">
+						<img src="img/loader.gif" alt="loading" class="ajaxgif hideAjax">
+						<div class="msg"></div>
+					</div>
+
+					<div class="form-group">
+						<input type="submit" name="submit" value="Send" class="btn btn-info btn-lg btn-secContacto" id="btn-contact">
+					</div>
+				</form>
+			</div>
+			<aside class="col-md-4 hidden-xs hidden-sm datos-contacto">
+				<div class="col-md-12">
+					<br>
+					<a href="https://twitter.com/sildesweb" class="twitter-follow-button" data-size="large" data-show-screen-name="false" data-show-count="false">Follow @sildesweb</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+				</div>
+				<div class="col-md-12">
+					<br>
+					<a class="twitter-timeline" data-height="600" data-dnt="true" href="https://twitter.com/sildesweb">Tweets by sildesweb</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+				</div>
+			</aside>
+		</div>
+	</section>	
+
+		<?php
+	}
 	else{
 		echo "error al mostrar la categoria";
 	}
-
 ?>
 <?php get_footer();?>

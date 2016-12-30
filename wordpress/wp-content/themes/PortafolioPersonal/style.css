@@ -21,7 +21,6 @@ body{
 	background: black;
 }*/
 .container{
-	border: 1px solid red;
 	padding: 0!important;
 }
 
@@ -96,6 +95,14 @@ body{
 			    -moz-box-shadow: 4px 4px 4px rgba(0,0,0,0.3);
 			    box-shadow: 4px 4px 4px rgba(0,0,0,0.3);
 			   }
+.habilidades{
+	border: 1px solid red;
+	display: inline-block;
+}
+	.img-habilidad{
+		border: 1px solid black;
+		display: inline-block;
+	}
 .contenedor-footer{
 	background: #222222;
 }
@@ -126,7 +133,6 @@ body{
 
 	}
 .acercademi{
-	border:1px solid green;
 	font-size: 16pt;
 }
 .contacto{
@@ -222,7 +228,6 @@ body{
 	margin-left: 0!important;
 }
 .lista-redes{
-	border: 1px solid red;	
 	width: 100%;
 	height: auto;
 }

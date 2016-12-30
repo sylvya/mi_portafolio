@@ -80,7 +80,8 @@
 					<textarea name="message" id="message" rows="6" class="form-control" id="name"></textarea>
 				</div>
 				<div class="procesando">
-					<img src="img/loader.gif" alt="loading" class="ajaxgif hideAjax">
+					<img src="<?php bloginfo('stylesheet_directory'); ?>/img/loader.gif" alt="loading" class="ajaxgif hideAjax">
+
 					<div class="msg"></div>
 				</div>
 
@@ -99,7 +100,6 @@
 						<a href="https://www.facebook.com/SilviaLoph" class="icon-redes">
 							<span class="icon-facebook"></span>
 						</a>
-						
 						<a href="https://twitter.com/sildesweb" class="icon-redes">
 							<span class="icon-twitter"></span>
 						</a>
@@ -224,7 +224,7 @@
 						<textarea name="message" id="message" rows="6" class="form-control" id="name"></textarea>
 					</div>
 					<div class="procesando">
-						<img src="img/loader.gif" alt="loading" class="ajaxgif hideAjax">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/img/loader.gif" alt="loading" class="ajaxgif hideAjax">
 						<div class="msg"></div>
 					</div>
 

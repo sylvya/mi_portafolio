@@ -42,14 +42,14 @@
 				<?php endif; ?>		
 			<?php endwhile; ?>
 	</div>
-	
+	<!--
 		<div class="jumbotron ">
 		<div class="container">
 			<h2 class="habilidades col-md-3">Habilidades</h2><br>
 			<div class="img-habilidad col-md-9">
-				<img src="<?php bloginfo('stylesheet_directory'); ?>/img/ico-web.png" alt="">
-				<img src="<?php bloginfo('stylesheet_directory'); ?>/img/ico-coding.png" alt="">
-				<img src="<?php bloginfo('stylesheet_directory'); ?>/img/ico-social.png" alt="">
+				<img src="<?php //bloginfo('stylesheet_directory'); ?>/img/ico-web.png" alt="">
+				<img src="<?php //bloginfo('stylesheet_directory'); ?>/img/ico-coding.png" alt="">
+				<img src="<?php //bloginfo('stylesheet_directory'); ?>/img/ico-social.png" alt="">
 			</div>
 		</div>
 	</div>

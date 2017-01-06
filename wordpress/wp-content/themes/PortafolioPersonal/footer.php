@@ -28,6 +28,7 @@
 			</div>
 		</div>
 	</footer>
+	<!--*]Qd^6=s5oVE-->
 	
 	<script src="https://code.jquery.com/jquery-latest.js"></script>
 	<!-- Latest compiled and minified JavaScript -->

@@ -20,6 +20,32 @@ body{
 	width: cover;
 	background: black;
 }*/
+/*//////////////////////////////////*/
+/*stilos de #MujeresEn Digital*/
+.curso{
+	display: block;
+	margin-bottom: 50pt;
+}
+.curso img{
+	width: 350px;
+    margin-top: 7%!important;	
+}
+.curso p{
+	font-size:14pt!important; 
+
+}
+.like{
+	text-align: center!important;
+	margin-top: 10px;	
+}
+.twitterFollow{
+	display: inline-block;
+	top: 5px;
+	position: relative;
+}
+
+/*//////////////////////////////////*/
+
 .container{
 	padding: 0!important;
 }
@@ -70,7 +96,7 @@ body{
 }
 .titulo-principal{
 		text-align: center;
-		font-size: 35pt!important;
+		font-size: 30pt!important;
 		font-family: arial;
 }
 	.descripcion-principal{
@@ -320,6 +346,10 @@ body{
 		margin-top: 2em;
 	}
 
+/*Menú*/
+.navbar-toggle{
+	margin-right: 44px!important;
+}
 /*MEDIA QUERIES*/
 @media (max-width:1199px){
 	.titulo-descTrabajo,.btn-portafolio{
@@ -353,7 +383,6 @@ body{
 		width: 100%;
 		margin: 0 auto;
 	}
-	*/
 	/*Acerca de mi*/
 	.img-perfil{
 		width: 70%;
@@ -370,7 +399,7 @@ body{
 	position: relative!important;
 	display: block;
 
-}
+	}
 	.imagenTrabajo-posicion1{
 		display: none;
 	}
@@ -382,9 +411,21 @@ body{
 	.seccion-contacto{
 		padding-right: 15px;
 	}
+	.curso img{
+	width: 100%;
+    margin-top: 10%!important;	
+}
 	
 	/*Lista Footer*/
 @media(max-width: 769px){
+	.titulo-principal{
+		font-size: 22pt!important;
+	}
+	.descripcion-principal{
+		font-size: 17pt!important;
+	    text-align: justify;
+	    margin: 0 15pt;
+	}
 	.cont-listaSeccion{
 		width: 100%;
 	}
@@ -395,12 +436,29 @@ body{
 	.titulo-descTrabajo{
 		font-size: 16px;
 	}
+	.img-thumbnail{
+		max-width: 80%!important;
+	}
+	.text-info{
+		margin-left: 3%!important;
+	}
 
 }
 @media(max-width: 499px){
-	.img-herramientas{
-		width: 100%;
-		margin: 0 auto;
+	.descripcion-principal{
+		font-size: 15pt!important;
+	    text-align: justify;
+	    margin: 0 15pt;
+	}
+	
+	.img-thumbnail{
+		max-width: 100%!important;
+	}
+	.col-md-3{
+		margin-top: 0;
+	}
+	.col-xs-4{
+		width: 50%!important;
 	}
 	.btn-portafolio{
 		width: 88%;
@@ -408,6 +466,9 @@ body{
 	/*Footer */
 	.copy-footer{
 		font-size: 13px!important;
+	}
+	.contenedor-hts{
+		width: 80%!important;
 	}
 
 

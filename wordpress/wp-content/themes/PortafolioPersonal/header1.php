@@ -14,18 +14,32 @@
 </head>
 <body>
 	
-	<header class="header"><!--menú-->	
-	 	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+	<header class="header"><!--menú-->
+		<!--<?php 
+			/*wp_nav_menu(
+				array(
+					'theme_location' => 'top-menu',
+				)
+			)*/
+			?>-->
+		<!-- <ul class="menu">
+		 	<li><a href="#acerca-deMi">A cerca de Mi</a></li>
+		 	<li><a href="#habilidades">Habilidades</a></li>
+		 	<li><a href="#portafolio">Portafolio</a></li>
+		 	<li><a href="#contacto">Contacto</a></li>
+		 </ul>-->
+		 	
+		 	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
 			 <div class="container">
 			 	<div class="navbar-header">
-			 		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-pp" aria-expanded="true"> 
+			 		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="true"> 
 			 			<span class="sr-only">Toggle navigation</span> 
 			 			<span class="icon-bar"></span> 
 			 			<span class="icon-bar"></span> 
 			 			<span class="icon-bar"></span> 
 			 		</button>
 		 		</div>
-				<div class="collapse navbar-collapse" id="navegacion-pp"> 
+				<div class=""> 
 					<?php 
 						$defaults = array(
 						'theme_location'  => 'menu-header',
@@ -50,6 +64,6 @@
 					?>
 				</div>
 			</div>
-		</nav>
+		 </nav>
 	</header>
 		

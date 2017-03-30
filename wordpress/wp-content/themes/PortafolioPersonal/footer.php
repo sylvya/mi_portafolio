@@ -3,13 +3,13 @@
 			<div class="container footer">
 				<div class=" col-sm-6 col-md-4 redes-footer">
 					<nav class="lista-redesFooter list-inline">
-						<a href="https://www.facebook.com/SilviaLoph">
+						<a  target="_blank" href="https://www.facebook.com/sildesweb">
 							<span class="icon-facebook"></span>
 						</a>
-						<a href="https://twitter.com/sildesweb">
+						<a target="_blank" href="https://twitter.com/sildesweb">
 							<span class="icon-twitter"></span>
 						</a>
-						<a href="https://www.linkedin.com/in/silvia-lopez-hernandez-622545112?trk=nav_responsive_tab_profile_pic">
+						<a target="_blank"  href="https://www.linkedin.com/in/silvia-lopez-hernandez-622545112?trk=nav_responsive_tab_profile_pic">
 							<span class="icon-linkedin"></span>
 						</a>
 						
